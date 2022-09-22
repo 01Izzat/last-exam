@@ -1,0 +1,94 @@
+.me {
+  margin-top: 48px;
+  margin-bottom: 100px;
+}
+
+.me__holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.me__title {
+  margin: 0;
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.05;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 635px;
+}
+
+input {
+  width: 100%;
+  padding: 17px 0 17px 16px;
+  background-color: #d7d7d7;
+  border: transparent;
+  outline: transparent;
+  margin-bottom: 24px;
+
+  &:focus {
+    border: 2px solid green;
+  }
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 2.3;
+}
+
+.me__input {
+  width: 100%;
+  padding: 15px 0 65px 16px;
+  border: transparent;
+  outline: transparent;
+  margin-bottom: 24px;
+  background-color: #d7d7d7;
+  resize: none;
+
+  &:focus {
+    border: 2px solid green;
+  }
+}
+
+.me__btn {
+  width: 200px;
+  line-height: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 17px 24px;
+  color: $white;
+  background-color: $blue;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border: none;
+}
+
+@media only screen and(max-width: $tablet) {
+  .me {
+    margin-bottom: 60px;
+  }
+  .me__holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .me__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and(max-width: $mobile) {
+  .me__holder {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+}

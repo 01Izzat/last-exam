@@ -1,0 +1,109 @@
+.hero {
+  margin-bottom: 150px;
+}
+.hero-inner {
+  width: 100%;
+  height: 600px;
+  background-image: url(../../assets/img/des-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-inner__title {
+  width: 445px;
+  height: 357px;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  h1 {
+    margin: 0;
+    padding-top: 56px;
+    font-family: "Ibarra Real Nova";
+    width: 393px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1;
+  }
+}
+
+.hero-btn {
+  padding: 17px 40px 17px 85px;
+  background-color: $blue;
+  color: $white;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+  border: none;
+  &:hover {
+    background-color: $green;
+  }
+  &::before {
+    position: absolute;
+    content: url("../../assets/icons/btn-svg.svg");
+    top: 18px;
+    left: 16px;
+  }
+}
+
+@media only screen and (max-width: $tablet) {
+  .hero-inner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../../assets/img/tablet-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero-inner__title {
+    width: 512px;
+    height: 278px;
+    h1 {
+      width: 471px;
+      font-size: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .hero {
+    margin-bottom: 370px;
+  }
+  .hero-inner__title {
+    height: 300px;
+  }
+  .hero-inner {
+    width: 100%;
+    height: 271px;
+    background-image: url(../../assets/img/mobile-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-inner__title {
+    width: 311px;
+    top: 100%;
+    h1 {
+      width: 323px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-sm) {
+  .hero-inner {
+    width: 100%;
+    object-fit: cover;
+  }
+  .hero-inner__title {
+    width: 100%;
+  }
+  .hero-inner__title--header {
+    font-size: 22px;
+    text-align: center;
+    width: 260px;
+  }
+}

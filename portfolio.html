@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>2-page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a href="#"
+            ><img src="./assets/icons/logo.svg" alt="logo" class="nav__logo"
+          /></a>
+
+          <ul class="nav__ul">
+            <li class="nav__ul--list">
+              <a href="#" class="nav__ul--list-link">home</a>
+            </li>
+            <li class="nav__ul--list">
+              <a href="#" class="nav__ul--list-link">portfolio</a>
+            </li>
+            <li class="nav__ul--list">
+              <a href="#" class="nav__ul--list-link">contact me</a>
+            </li>
+          </ul>
+
+          <div class="nav__gambur">
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="portfolio">
+          <picture class="portfolio__pic">
+            <source media="(max-width:576px)" srcset="./assets/img/1-mobile.png 1x">
+            <source media="(max-width:768px)" srcset="./assets/img/1-tablet.png 1x">
+            <img src="./assets/img/1 img.png" alt="pic" >
+          </picture>
+          <div class="portfolio__desc">
+            <h2 class="portfolio__desc-title">Manage</h2>
+            <p class="portfolio__desc-text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+            <button class="portfolio__desc-btn">VIEW PROJECT</button>
+          </div>
+
+          <div class="portfolio bookmark">
+            <div class="portfolio__desc">
+              <h2 class="portfolio__desc-title">Bookmark</h2>
+              <p class="portfolio__desc-text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.</p>
+              <button class="portfolio__desc-btn">VIEW PROJECT</button>
+            </div>
+            <picture class="portfolio__pic">
+              <source media="(max-width:576px)" srcset="./assets/img/2-mobile.png 1x">
+              <source media="(max-width:768px)" srcset="./assets/img/2-tablet.png 1x">
+              <img src="./assets/img/2 img.png" alt="pic" />
+            </picture>
+        </div>
+
+        <div class="portfolio">
+          <picture class="portfolio__pic">
+            <source media="(max-width:576px)" srcset="./assets/img/3-mobile.png 1x">
+            <source media="(max-width:768px)" srcset="./assets/img/3-tablet.png 1x">
+            <img src="./assets/img/3 img.png" alt="pic" >
+          </picture>
+          <div class="portfolio__desc">
+            <h2 class="portfolio__desc-title">Insure</h2>
+            <p class="portfolio__desc-text">This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.</p>
+            <button class="portfolio__desc-btn">VIEW PROJECT</button>
+          </div>
+
+          <div class="portfolio fylo">
+            <div class="portfolio__desc">
+              <h2 class="portfolio__desc-title">Fylo</h2>
+              <p class="portfolio__desc-text">This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.</p>
+              <button class="portfolio__desc-btn">VIEW PROJECT</button>
+            </div>
+            <picture class="portfolio__pic">
+              <source media="(max-width:576px)" srcset="./assets/img/4-mobile.png 1x">
+              <source media="(max-width:768px)" srcset="./assets/img/4-tablet.png 1x">
+              <img src="./assets/img/4 img.png" alt="pic" />
+            </picture>
+      </div>
+
+      <section class="project-inner">
+        <div class="project">
+          <h2 class="project__title"></h2>
+          <button class="project__btn"></button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-navbar">
+        <div class="container footer-inner">
+          <div class="footer-holder">
+            <div class="footer-logo">
+              <a href="#">
+                <img src="./assets/icons/footer-logo.svg" alt="logo" />
+              </a>
+            </div>
+            <ul class="footer-nav">
+              <li class="footer-nav__item">
+                <a class="footer-nav__item--link" href="./index.html">home</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__item--link" href="./portfolio.html"
+                  >portfolio</a
+                >
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__item--link" href="./contact.html"
+                  >contact me</a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul class="media">
+            <li>
+              <a href="https://github.com/"
+                ><img src="./assets/icons/github.svg" alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=ru"
+                ><img src="./assets/icons/twitter.svg" alt="twitter"
+              /></a>
+            </li>
+            <li>
+              <a href="linkedin.com"
+                ><img src="./assets/icons/linked-in.svg" alt="linked-in"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

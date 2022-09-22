@@ -1,0 +1,65 @@
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.project__title {
+  width: 350px;
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  line-height: 1.05;
+  font-weight: 700;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 534px;
+    height: 1px;
+    background-color: #ddddde;
+    top: 50%;
+    left: 370px;
+  }
+}
+
+.project__btn {
+  height: 48px;
+  padding: 17px 35px;
+  color: $dark-blue;
+  background-color: transparent;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  border: 1px solid $dark-blue;
+  &:hover {
+    background-color: $dark-blue;
+    color: $white;
+  }
+}
+
+@media only screen and(max-width: $tablet) {
+  .project {
+    margin-bottom: 100px;
+  }
+  .project__title::after {
+    width: 112px;
+  }
+}
+
+@media only screen and(max-width: $mobile) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .project__title {
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    &::after {
+      content: none;
+    }
+  }
+}

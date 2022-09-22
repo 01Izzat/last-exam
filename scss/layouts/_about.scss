@@ -1,0 +1,65 @@
+.about {
+  margin-bottom: 150px;
+}
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text {
+  padding: 50px 0 46px 0;
+  width: 350px;
+  border-top: 1px solid #ddddde;
+  border-bottom: 1px solid #ddddde;
+  &__title {
+    font-family: "Ibarra Real Nova";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.05;
+    margin-bottom: 28px;
+  }
+  &__descr {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: $dark-blue;
+  }
+}
+.about-btn {
+  padding: 17px 32px;
+  background-color: transparent;
+  color: #000;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: 1px solid $dark-blue;
+  &:hover {
+    background-color: $dark-blue;
+    color: $white;
+  }
+}
+@media only screen and (max-width: $tablet) {
+  .about-container {
+    width: 100%;
+  }
+  .about-text {
+    width: 340px;
+  }
+}
+@media only screen and (max-width: $mobile) {
+  .about {
+    margin-bottom: 115px;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-img {
+    margin-bottom: 60px;
+  }
+  .about-text {
+    width: 100%;
+  }
+}

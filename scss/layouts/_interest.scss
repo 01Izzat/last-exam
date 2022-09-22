@@ -1,0 +1,64 @@
+.interest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.interest-title {
+  width: 350px;
+  font-family: "Ibarra Real Nova";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.05;
+  margin-bottom: 28px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 534px;
+    height: 1px;
+    background-color: #ddddde;
+    top: 50%;
+    left: 370px;
+  }
+}
+.interest-btn {
+  padding: 17px 35px;
+  background-color: transparent;
+  color: $dark-blue;
+  font-size: 12px;
+  letter-spacing: 2px;
+  height: 48px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid $blue;
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+@media only screen and(max-width: $tablet) {
+  .interest {
+    margin-bottom: 100px;
+  }
+  .interest-title::after {
+    width: 113px;
+  }
+}
+
+@media only screen and(max-width: $mobile) {
+  .interest {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+  }
+  .interest-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    &::after {
+      content: none;
+    }
+  }
+}
